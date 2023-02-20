@@ -17,7 +17,7 @@ const supabase = supabaseimport.createClient(supabaseUrl, supabaseKey);
 
 const db = knex({
     client: 'pg',
-    connection: process.env.DATABASE_CONNECTION
+    connection: process.env.DB_CONNECTION
 });
  
 const app = express();
