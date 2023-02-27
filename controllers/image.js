@@ -10,7 +10,7 @@ const handleApiCall = (req, res) => {
     stub.PostModelOutputs(
         {
             
-            model_id: req.body.module,
+            model_id: req.body.module.id,
             inputs: [{data: {image: {url: req.body.input}}}]
         },
         metadata,
